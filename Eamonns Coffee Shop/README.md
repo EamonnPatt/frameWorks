@@ -1,6 +1,6 @@
-# Cosmic Café
+# Eamonns Coffee Shop
 http://localhost:8080
-Cosmic Café is a small Eleventy (11ty) site showcasing modern static site practices:
+Eamonns Coffee Shop is a small Eleventy (11ty) site showcasing modern static site practices:
 
 - Nunjucks templates and reusable layouts/components
 - Collections and paginated listing pages
