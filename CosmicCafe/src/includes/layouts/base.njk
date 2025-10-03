@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} · {% endif %}Eamonns Coffee Shop</title>
+    <meta name="description" content="{{ description or 'A cosmic-themed 11ty site' }}" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    {% include "layouts/components/header.njk" %}
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    {% include "layouts/components/footer.njk" %}
+  </body>
+</html>
+
+
+
