@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: Eamonns Coffee Shop — sip stellar brews and read spacey stories.
+description: Eamonns Coffee Shop — Drink Coffee.
 pagination:
   data: collections.posts
   size: 1
@@ -10,9 +10,8 @@ permalink: /{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 
 ---
 <section class="hero">
   <h1>Welcome to Eamonns Cofee Shop</h1>
-  <p>Small sips. Big universe. Hand-crafted posts brewed fresh.</p>
-  <p><a class="button" href="/blog/">Explore the Blog</a></p>
-  <figure class="emoji">☕✨</figure>
+  <p>Small sips. Hand-crafted Coffee brewed fresh.</p>
+  <p><a class="button" href="/Products/">Explore the Products</a></p>
   <hr />
   <h2>Latest Post</h2>
   {% if post %}

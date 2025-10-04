@@ -1,14 +1,14 @@
 ---
 layout: layouts/base.njk
-title: Blog
+title: Products
 pagination:
   data: collections.posts
   size: 5
   alias: posts
-permalink: /blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+permalink: /Products/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
 ---
 
-<h1>Blog</h1>
+<h1>Products</h1>
 
 <ul class="post-list">
 {% for post in posts %}

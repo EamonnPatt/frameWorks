@@ -1,8 +1,8 @@
 module.exports = function(eleventyConfig) {
-  // Copy static assets directly to the output folder
+  //Copy static assets directly to the output folder
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
-  // Nunjucks filters
+  //nunjucks filters
   eleventyConfig.addNunjucksFilter("date", function(input, format = "MMM d, yyyy") {
     if (!input) return "";
     const dateObj = input === 'now' ? new Date() : (input instanceof Date ? input : new Date(input));
@@ -17,13 +17,13 @@ module.exports = function(eleventyConfig) {
     return new Intl.DateTimeFormat("en-US", opts).format(dateObj);
   });
 
-  // Add slice filter for limiting arrays
+  //add slice filter for limiting arrays
   eleventyConfig.addNunjucksFilter("slice", function(array, start, end) {
     if (!Array.isArray(array)) return [];
     return array.slice(start, end);
   });
 
-  // Collections
+  //Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("src/posts/**/*.md")
