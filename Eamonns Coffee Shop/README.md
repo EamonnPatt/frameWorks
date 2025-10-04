@@ -1,6 +1,6 @@
+# **readme created with chat gpt
+
 # Eamonns Coffee Shop
-http://localhost:8080
-Eamonns Coffee Shop is a small Eleventy (11ty) site showcasing modern static site practices:
 
 - Nunjucks templates and reusable layouts/components
 - Collections and paginated listing pages

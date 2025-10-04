@@ -17,6 +17,12 @@ module.exports = function(eleventyConfig) {
     return new Intl.DateTimeFormat("en-US", opts).format(dateObj);
   });
 
+  // Add slice filter for limiting arrays
+  eleventyConfig.addNunjucksFilter("slice", function(array, start, end) {
+    if (!Array.isArray(array)) return [];
+    return array.slice(start, end);
+  });
+
   // Collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi
@@ -37,5 +43,3 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
-
-
